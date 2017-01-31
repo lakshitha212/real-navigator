@@ -8,7 +8,7 @@ $username = $dbparts['user'];
 $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 // Create connection
-$conn = new mysqli($hostname, $username, $password);
+$conn = new mysqli($hostname, $username, $password,$database);
 
 // Check connection
 if ($conn->connect_error) {
